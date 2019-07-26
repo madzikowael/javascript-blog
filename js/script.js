@@ -26,6 +26,12 @@ const titleClickHandler = function(event){
   
     /* remove class 'active' from all articles */
   
+    const activeArticles = document.querySelectorAll('.article a.active');
+
+    for (let activeArticle of activeArticles){
+        activeArticle.classList.remove('active');
+    }
+
     /* get 'href' attribute from the clicked link */
   
     /* find the correct article using the selector (value of 'href' attribute) */
