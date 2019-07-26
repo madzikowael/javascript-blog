@@ -14,6 +14,7 @@ for(let link of links){
 */
 
 const titleClickHandler = function(event){
+    event.preventDefault();
     const clickedElement = this;
     console.log('Link was clicked!');
   
@@ -38,6 +39,11 @@ const titleClickHandler = function(event){
     }
 
     /* get 'href' attribute from the clicked link */
+
+    const articleSelector = document.getElementById('li');
+    articleSelector = element.getAttribute('href');
+    console.log('articleSelector');
+    
   
     /* find the correct article using the selector (value of 'href' attribute) */
   
