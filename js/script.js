@@ -62,4 +62,43 @@ const titleClickHandler = function(event){
   
   for(let link of links){
     link.addEventListener('click', titleClickHandler);
+
+
+
+    const optArticleSelector = '.post',
+    optTitleSelector = '.post-title',
+    optTitleListSelector = '.titles';
+  
+  function generateTitleLinks(){
+  
+    /* remove contents of titleList */
+  const titleList = querySelector(optTitleListSelector);
+  function clearMessages(){
+      document.getElementById('messages').innerHTML = '';
+  }
+  titleList.classList.remove(optTitleListSelector);
+
+    /* for each article */
+  const articles = querySelector(optArticleSelector);
+ 
+  let html = '';
+
+  for(let article of articles) {
+    article.addEventListener('click', optArticleSelector);
+  }
+      /* get the article id */
+  const articleId = document.getElementById('id');
+      /* find the title element */
+      const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+      /* get the title from the title element */
+      const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
+      console.log(linkHTML);
+      /* create HTML of the link */
+      titleList.innerHTML = titleList.innerHTML + linkHTML;
+      /* insert link into titleList */
+  html = html + linkHTML;
+  }
+ titleList.innetHTML = html;
+} 
+  generateTitleLinks();   
   }
