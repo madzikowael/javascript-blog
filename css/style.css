@@ -6,7 +6,10 @@
 }
 
 body {
-  background: #fff;
+  background: url("https://images.pexels.com/photos/1416367/pexels-photo-1416367.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
@@ -50,20 +53,25 @@ body {
 }
 
 .sidebar, .posts {
-  background: #fff;
+  background: #DCEAF4;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid #444;
-  border-radius: 5px;
+  border: 1px solid #DCEAF4;
+  border-radius: 15px;
 }
 
 /* Logo */
 .logo {
   font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-size: 104px;
+  font-weight: 500;
+  font-size: 124px;
   line-height: 1;
   text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-shadow: 2px 4px 10px pink;
 }
 
 /* Lists */
@@ -97,6 +105,9 @@ body {
 
 .post-author {
   font-style: italic;
+  font-family: "Sacramento", cursive;
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .post-tags {
@@ -106,5 +117,31 @@ body {
 
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+.post-title {
+  font-family: "Sacramento", cursive;
+  font-size: 34px;
+  margin: 15px;
+  margin-left: 0;
+  margin-bottom: 0;
+  color: #034051;
+}
+
+.section-title {
+  color: #034051;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.author-name {
+  font-family: "Sacramento", cursive;
+  font-size: 18px;
+  text-decoration: none;
+  color: #001D1F;
+}
+
+a {
+  color: #001D1F;
 }
 /*# sourceMappingURL=style.css.map */
